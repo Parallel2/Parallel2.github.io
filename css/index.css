@@ -1,0 +1,124 @@
+@import"nav.css";
+
+/*Heading*/
+header {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(105deg, rgba(100, 178, 241, 0.164), black);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0;
+
+}
+
+/*Page Style*/
+html,
+body {
+    height: auto;
+    margin: 0;
+}
+
+html {
+    background: rgb(45, 66, 83);
+    background-image: url(../images/beautiful-milky-way-night-sky_53876-139825.avif);
+    background-size: cover;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    width: 85%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background: linear-gradient(105deg, rgba(100, 178, 241, 0.753), black);
+
+
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text pic1";
+    grid-gap: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+
+}
+
+
+.text {
+    grid-area: text;
+    background-color: rgb(17, 13, 24);
+    font-size: 2.1em;
+    text-align: center;
+    color: #ececf3;
+    height: 96.6%;
+}
+
+.pic1 {
+    grid-area: pic1;
+    width: 100%;
+
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.3em;
+    color: rgb(192, 184, 184);
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+@media (max-aspect-ratio: 1/1) {
+    .content {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "pic1"
+            "text";
+        padding: 2%;
+    }
+
+    .text {
+        font-size: 1.5em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}

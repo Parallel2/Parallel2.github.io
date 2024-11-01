@@ -1,0 +1,203 @@
+@import"nav.css";
+
+/*Heading*/
+header {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.432), rgb(0, 0, 0));
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0;
+
+}
+
+html,
+body {
+    height: auto;
+    margin: 0;
+}
+
+html {
+    background: rgb(45, 66, 83);
+    background-image: url(../images/23-9781-KCS-Fairmont-Beast-Legacy-Decal-01.png);
+    background-size: cover;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.753), rgba(0, 0, 0, 0.568));
+    height: 140%;
+
+}
+
+.indoor {
+    width: 16%;
+    float: right;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 7%;
+}
+
+.Race {
+    width: 16%;
+    float: left;
+    padding-left: 2%;
+    padding-top: 7%;
+    padding-right: 2%;
+}
+
+.Team {
+    float: left;
+    width: 27%;
+    padding: 0;
+    padding-left: 20%;
+    padding-top: 4%;
+}
+
+.Dewine {
+    float: right;
+    width: 27%;
+    padding: 0;
+    padding-right: 20%;
+    padding-top: 4%;
+}
+
+blockquote {
+    font-size: 2em;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    margin-left: 30%;
+    color: navy;
+}
+
+blockquote {
+    background: rgb(139, 161, 179);
+    border-left: 10px solid rgb(190, 36, 36);
+    border-radius: 20%;
+    width: 40%;
+    height: auto;
+}
+
+h2 {
+    padding-top: 1%;
+    font-size: 2em;
+}
+
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+p {
+    margin-top: 10%;
+}
+
+/* Style for side images */
+.side-image {
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: .5em;
+    padding-right: 10%;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+/* Style for side images */
+.side-image {
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    /* Dark background color */
+    color: #f2f2f2;
+    /* Light text color for contrast */
+    padding: 20px;
+    /* Padding around the text */
+    text-align: center;
+    /* Center the text */
+    font-size: 0.5em;
+    /* Font size */
+    border-top: 2px solid #666;
+    /* Border on the top of footer */
+}
+
+footer p {
+    margin: 0;
+    /* Remove default paragraph margin */
+    padding: 10px 0;
+    /* Add padding within the paragraph */
+}
+
+
+
+/* Style for center paragraph */
+.center-paragraph {
+    flex: 1;
+    margin: 0 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    color: black;
+}
+
+
+
+@media (max-aspect-ratio: 1/1) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    p,
+    blockquote,
+    h2,
+    label {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    nav ol {
+        gap: 5px;
+    }
+
+    .form-section {
+        padding: 0 10px;
+    }
+}
